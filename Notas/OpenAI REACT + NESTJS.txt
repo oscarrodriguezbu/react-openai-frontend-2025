@@ -1,0 +1,138 @@
+OpenAI: REACT + NESTJS
+Frontend
+
+----------------------------------------
+Seccion 2 Diseño y creación de la aplicación:
+React Router Dom
+
+Diseño de Layout
+
+Rutas Hijas
+
+Redirecciones
+
+Tailwind
+
+React Markdown Component
+
+Diseño de chat
+
+Estructura del proyecto.
+
+
+Notas:
+- Carpeta core tiene casos de usos. Logica de programación reutilizable en otros lenguajes
+- Carpet presentation tiene el layout, pages y los components etc.
+- En produccion Tailwind exporta solo las clases css que se usaron
+- Se instala Markdown por si se le pide a la IA traer algo en ese formato y queremos que se muestre de esa forma
+- Tiene mensajes personalizados dependiendo del contenido que se ingrese (3 cajas de texto diferentes) Normal, archivos cargados, selectores
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 4 Ortografia:
+FetchAPI
+
+Post request
+
+Crear un caso de uso
+
+Interfaces para el tipado de la respuesta
+
+Mostrar la respuesta como un mensaje de chat.
+
+
+----------------------------------------
+----------------------------------------
+Seccion 6 ProsCons Discusser Streams:
+Streams
+
+Funciones generadoras
+
+Decoders
+
+For await
+
+AbortSignals
+
+
+Notas:
+- JavaScript tiene funciones generadoras: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+- Una función generadora puede emitir varios valores, el return seria el fin de todo pero en lugar de eso tenemos los yield
+- Abort es para cancelar el streaming, si pregunto otra vez, deja de renderizar la respuesta anterior y renderiza la nueva
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 8 Traducciones:
+En esta sección trabajaremos en el frontend para poder seleccionar un idioma y el texto a traducir, para enviarlo a nuestro endpoint.
+Recuerden, que si quieren recorrer la milla extra, hagan la traducción como un stream de información.
+
+
+----------------------------------------
+----------------------------------------
+Seccion 10 Texto a Audio:
+
+Frase para generar el audio:
+やってみなければ分からない。誰にも結果は分からないんだ。だから…自分で決めろ。自分の信じる通りにやれ。 "No lo sabrás hasta que lo intentes. Nadie puede saber el resultado. Por eso… decide tú mismo. Haz lo que creas correcto."  Levi Ackerman, Shingeki no Kyojin
+
+Notas:
+- Existe la etiqueta Audio que se encarga de mostrar lo necesario para reproducir ese audio
+
+----------------------------------------
+----------------------------------------
+Seccion 12 Audio a texto:
+En esta sección trabajaremos tomando el backend que hicimos y mostraremos en nuestro chat, permitiendo realizar la carga y transcripciones del audio que cargaremos.
+
+Puntualmente no es una sección complicada, pero trabajaremos el mensaje de respuesta, como si fuera una serie de mensajes independientes.
+
+Siéntanse libres de realizar un programa para ajustar los subtítulos acorde a los valores iniciales que tenemos como un trabajo adicional.
+
+
+Notas:
+- El audio debe estar en el mismo language que se configure en el modelo del backend
+- 
+
+
+----------------------------------------
+----------------------------------------
+Seccion 14 Generacion y edicion de imagenes:
+Esta sección principalmente está enfocada en consumir los endpoints de la sección anterior que serían:
+
+Generar imágenes
+
+Editar imágenes
+
+Crear variaciones
+
+Para la edición de imágenes, necesitaremos convertir la imagen a un canvas, para poder cortarla y jugar con ella, para poder crear una máscara que nos permita decirle a OpenAI ¿Qué quiero editar? y ¿Qué quiero hacer? en un determinado espacio.
+
+No es complicado, pero si requiere comprender la parte del canvas y el porqué del mismo, pero no se preocupen, lo verán en esta sección.
+
+
+Notas:
+- Para convertir una imagen, toca convertir a un canvas
+- canvas es un elemento html
+- 
+
+
+----------------------------------------
+----------------------------------------
+Seccion 15 Asistentes:
+
+
+
+Notas:
+- 
+
+----------------------------------------
+----------------------------------------
+Seccion 16 Imagen a texto:
+
+
+
+Notas:
+- 
+
+----------------------------------------
+
