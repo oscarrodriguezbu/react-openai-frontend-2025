@@ -7,7 +7,6 @@ interface Message {
   isGpt: boolean;
 }
 
-
 export const AssistantPage = () => {
 
   const [isLoading, setIsLoading] = useState(false);
@@ -29,7 +28,6 @@ export const AssistantPage = () => {
     }
   }, []);
 
-
   // useEffect(() => {
   //   if ( threadId ) {
   //     setMessages( (prev) => [ ...prev, { text: `Número de thread ${ threadId }`, isGpt: true }] )
@@ -48,6 +46,9 @@ export const AssistantPage = () => {
 
     setIsLoading(false);
 
+    //? En este ejercicio la respuesta manda todo el historial, 
+    //? por lo que se puede mejorar el codigo para filtrar la data que llegue diferente 
+    //? o algo asi para que no se dupliquen los mensajes
     for (const reply of replies) {
       for (const message of reply.content) {
         setMessages((prev) => [
@@ -63,7 +64,7 @@ export const AssistantPage = () => {
       <div className="chat-messages">
         <div className="grid grid-cols-12 gap-y-2">
           {/* Bienvenida */}
-          <GptMessage text="Buen día, soy Sam,¿Cuál es tu nombre? y ¿en qué puedo ayudarte?" />
+          <GptMessage text="Hola, soy Sam,¿Cuál es tu nombre? y ¿en qué puedo ayudarte?" />
 
           {
             messages.map((message, index) => (

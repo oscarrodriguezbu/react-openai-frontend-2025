@@ -1,9 +1,6 @@
-
 export const createThreadUseCase = async () => {
-  
   try {
-    
-    const resp = await fetch(`${ import.meta.env.VITE_ASSISTANT_API }/create-thread`,{
+    const resp = await fetch(`${import.meta.env.VITE_ASSISTANT_API}/create-thread`, {
       method: 'POST'
     });
 
@@ -12,11 +9,6 @@ export const createThreadUseCase = async () => {
     return id;
 
   } catch (error) {
-
     throw new Error('Error creating thread');
   }
-
-
 }
-
-

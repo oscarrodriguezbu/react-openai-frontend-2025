@@ -118,17 +118,24 @@ Notas:
 
 ----------------------------------------
 ----------------------------------------
-Seccion 15 Asistentes:
+Seccion 16 Asistentes:
+En esta sección consumiremos el backend que creamos en la sección anterior, con el objetivo de crear el thread y la conversación con nuestro asistente.
 
+No hay nada realmente nuevo por aquí, más que la creación del thread y el consumo de los mensajes como lo hemos venido haciendo.
 
 
 Notas:
+- EXISTEN MEJORAS AL ASISTENTE COMO: Basicamente replicar el modo en que chatgpt gestiona los threads, para eso hay muchas opciones para conseguirlo, actualmente con fines academicos se trabaja con un solo thread
+- En este ejercicio el threadId se carga al ingresar a la pantalla del asistente con useEffect
+- En este ejercicio la respuesta manda todo el historial, por lo que se puede mejorar el codigo para filtrar la data que llegue diferente o algo asi para que no se dupliquen los mensajes
 - 
 
 ----------------------------------------
 ----------------------------------------
-Seccion 16 Imagen a texto:
+Seccion 17 Imagen a texto:
+A continuación una serie de posibles ideas que pueden desarrollar con el código que aprendimos a crear en el curso.
 
+Es totalmente opcional, y aunque tendrán el código fuente, la idea es que puedan implementarlo con que verán.
 
 
 Notas:
